@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<!-- Configuration AOP -->
+	<aop:aspectj-autoproxy />
+
+	<!-- Component scan root -->
+	<context:component-scan base-package="tuanpv.tool.profile" />
+
+	<!-- Velocity -->
+	<bean id="velocityEngine" init-method="init" class="org.apache.velocity.app.VelocityEngine" scope="singleton">
+		<!-- Define constructor via properties file -->
+		<!-- 
+		<constructor-arg type="java.lang.String" value="config/velocity.properties" />
+		-->
+
+		<!-- Define constructor via fixed value of properties -->
+		<constructor-arg type="java.util.Properties">
+			<props>
+				<prop key="runtime.log">velocity.log</prop>
+				<prop key="resource.loader">file, string</prop>
+
+				<!-- File resource loader -->
+				<prop key="file.resource.loader.description">Velocity File Resource Loader</prop>
+				<prop key="file.resource.loader.class">org.apache.velocity.runtime.resource.loader.FileResourceLoader</prop>
+				<prop key="file.resource.loader.path">.</prop>
+				<prop key="file.resource.loader.cache">false</prop>
+				<prop key="file.resource.loader.modificationCheckInterval">1</prop>
+
+				<!-- String resource loader -->
+				<prop key="string.resource.loader.description">Velocity String Resource Loader</prop>
+				<prop key="string.resource.loader.class">org.apache.velocity.runtime.resource.loader.StringResourceLoader</prop>
+				<prop key="string.resource.loader.cache">false</prop>
+				<prop key="string.resource.loader.modificationCheckInterval">2</prop>
+			</props>
+		</constructor-arg>
+	</bean>
+</beans>
