@@ -12,9 +12,25 @@
 		<poi.version>3.17</poi.version>
 		<jsoup.version>1.10.3</jsoup.version>
 		<velocity.version>1.7</velocity.version>
+
+		<selenium.version>3.14.0</selenium.version>
 	</properties>
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-remote-driver</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity -->
 		<dependency>
 			<groupId>org.apache.velocity</groupId>
