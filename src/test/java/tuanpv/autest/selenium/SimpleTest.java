@@ -25,7 +25,7 @@ public class SimpleTest extends TestCase {
 		// DesiredCapabilities.firefox());
 		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), DesiredCapabilities.chrome());
 		Options options = driver.manage();
-		options.timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		options.timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		options.window().setSize(new Dimension(1280, 800));
 	}
 
@@ -50,6 +50,8 @@ public class SimpleTest extends TestCase {
 		if (element != null) {
 			element.click();
 		}
+
+		wait(1000);
 
 		assertEquals("Request for Goods/Service Search", driver.getTitle());
 	}
