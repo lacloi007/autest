@@ -1,0 +1,26 @@
+{
+	"ppr-requester.uid": "000520",
+	"ppr-requester.pwd": "",
+	"ppr-reviewer.uid": "000092",
+	"ppr-reviewer.pwd": "",
+	"ppr-approver.uid": "000158",
+	"ppr-approver.pwd": "",
+	"prototype-reviewer.uid": "000521",
+	"prototype-reviewer.pwd": "",
+	"prototype-approver.uid": "0J0188",
+	"prototype-approver.pwd": "",
+
+	"po-applicant.uid": "000521",
+	"po-applicant.pwd": "",
+	"po-reviewer.uid": "000521",
+	"po-reviewer.pwd": "",
+	"po-approver.uid": "0J0188",
+	"po-approver.pwd": "",
+
+	"gr-applicant.uid": "000191",
+	"gr-applicant.pwd": "",
+	"gr-reviewer.uid": "000191",
+	"gr-reviewer.pwd": "",
+	"gr-approver.uid": "0J0188",
+	"gr-approver.pwd": ""
+}

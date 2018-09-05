@@ -1,0 +1,8 @@
+{
+	"browser": "chrome",
+	"hub": "http://localhost:4444/wd/hub",
+	"timeout": "10",
+	"width": "1280",
+	"heigh": "800",
+	"evident" : "output//screen-shot//2018-09-04"
+}

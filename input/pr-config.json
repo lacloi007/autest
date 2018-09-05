@@ -1,0 +1,8 @@
+{
+	"evident": "output//screen-shot//create-ppr",
+	"ppr-flow-name": "01 Prototype Part Request (PPR)",
+	"apply": "http://172.16.0.35:8080/tbas/im_workflow/user/apply/apply_list",
+	"apply.found.id": "flowList",
+	"po-flow-name": "02 Prototype Purchase Order (PO)",
+	"gr-flow-name": "03 Prototype Goods Receive (GR)"
+}
